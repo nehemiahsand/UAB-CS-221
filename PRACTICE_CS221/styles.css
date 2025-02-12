@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background for reduced contrast */
+    color: #023047; /* Dark blue for text */
+}
+
+nav {
+    background-color: #023047; /* Dark blue for the navigation bar */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text for navigation links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffb703; /* Yellow for hover effect on links */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #219ebc; /* Medium blue for header background */
+    color: #ffffff; /* White text for header */
+}
+
+section {
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background for sections */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #023047; /* Dark blue for footer */
+    color: #ffffff; /* White text for footer */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Home Page Specific Styles */
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: 4px solid #ffb703; /* Yellow border for the image */
+}
+
+/* About Me Page Specific Styles */
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+    color: #023047; /* Dark blue for list items */
+}
+
+/* My Work Page Specific Styles */
+section ul li a {
+    color: #219ebc; /* Medium blue for project links */
+    text-decoration: none;
+}
+
+section ul li a:hover {
+    color: #fb8500; /* Orange for hover effect on project links */
+}
+
+/* Contact Page Specific Styles */
+section ul li {
+    margin: 10px 0;
+}
+
+section ul li a {
+    color: #219ebc; /* Medium blue for contact links */
+    text-decoration: none;
+}
+
+section ul li a:hover {
+    color: #fb8500; /* Orange for hover effect on contact links */
+}
+
+/* Buttons */
+button {
+    background-color: #fb8500; /* Orange for buttons */
+    color: #ffffff; /* White text for buttons */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ffb703; /* Yellow for button hover effect */
+}
+
+/* Block Divider Layout */
+.block-divider {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    grid-template-rows: 1fr 1fr; /* Two rows */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.block-divider .top-left,
+.block-divider .bottom-left,
+.block-divider .top-right,
+.block-divider .bottom-right {
+    background-color: #ffffff; /* White background for each block */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.block-divider .top-left img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #ffb703; /* Yellow border for the image */
+}
+
+.block-divider .bottom-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #023047; /* Dark blue for text */
+}
+
+.block-divider .top-right,
+.block-divider .bottom-right {
+    text-align: center;
+}
+
+.block-divider .top-right h2,
+.block-divider .bottom-right h2 {
+    color: #219ebc; /* Medium blue for project titles */
+}
+
+.block-divider .top-right p,
+.block-divider .bottom-right p {
+    color: #023047; /* Dark blue for project descriptions */
+}
+
+.block-divider .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #fb8500; /* Orange for project links */
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.block-divider .project-link:hover {
+    background-color: #ffb703; /* Yellow for hover effect */
+}
+
+/* Buttons Below Block Divider */
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons .button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #219ebc; /* Medium blue for buttons */
+    color: #ffffff; /* White text for buttons */
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.buttons .button:hover {
+    background-color: #ffb703; /* Yellow for hover effect */
+}
