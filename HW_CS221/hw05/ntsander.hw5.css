@@ -1,37 +1,59 @@
 * {
+    /* "reset" the page to build onto it */
     padding: 0;
     margin: 0;
+    /* Edit the box sizing */
     box-sizing: border-box;
 }
 
 header {
+    /* Set the header to be fixed and not scroll with the webpage */
     position: fixed;
+    /* Align the text to be in the center of the box */
     text-align: center;
+    /* Set a border underneath the header box */
     border-bottom: 2px solid black;
+    /* Make sure the header takes up the full width */
     width: 100%;
+    /* Pin the header to the top of the page */
     top: 0;
+    /* Set the background color of the page */
     background-color: green;
-    padding: 10px 0;
+    /* Set padding all around the text */
+    padding: 10px;
 }
 
 main {
+    /* Align the text to be in the center of the box */
     text-align: center;
+    /* Set the background color of the page */
     background-color: skyblue;
+    /* Set the width of the main block to only take up 80% of the width of the page */
     width: 80%;
+    /* Center the whole block in the middle of the page */
     margin: auto;
+    /* Set padding all around the text */
     padding: 20px;
+    /* Push the main block below the header */
     margin-top: 100px;
 }
 
 footer {
+    /* Set the footer to be fixed and not scroll with the webpage */
     position: fixed;
+    /* Align the text to be in the center of the footer */
     text-align: center;
+    /* Set the footer to take up the whole width of the page */
     width: 100%;
+    /* Pin the footer to the bottom of the page */
     bottom: 0;
+    /* Set the background color of the box */
     background-color: blueviolet;
-    padding: 10px 0;
+    /* Set padding all around the text */
+    padding: 10px;
 }
 
 p {
+    /* Set padding all around the text */
     padding: 1em;
 }
