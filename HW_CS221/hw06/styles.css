@@ -7,10 +7,15 @@ body {
     font: 85px arial, sans-serif;
     margin: 3px;
    /* TODO: Add your solutions here */
+   /* Turn the blocks into a grid */
     display: grid;
+   /* Set the dimensions of my columns */
     grid-template-columns: 100px 100px 100px;
+   /* Set the dimensions of my rows */ 
     grid-template-rows: 100px 100px 100px;
+   /* Set an even distance between the blocks */ 
     grid-gap: 10px 10px;
+   /* Make sure all the content is center of the page */ 
     justify-content: center;
  }
  
