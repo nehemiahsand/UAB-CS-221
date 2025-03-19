@@ -35,7 +35,8 @@ p {
 
 header {
     background-color: #2c3e50; /* Sets the backgroud color of the box */
-    width: 100%;
+    max-width: 100%;
+    min-width: 350px;
 }
 
 /* NAV */
@@ -70,8 +71,8 @@ nav ul a:hover {
 
 #dog-picture {
     max-width: 100%;
+    min-width: 350px;
     height: auto;
-    border: 4px solid #1a2a3a;
 }
 
 /* LINKS */
@@ -158,7 +159,8 @@ footer {
     text-align: center;
     padding-bottom: 20px;
     font-size: small;
-    width: 100%;
+    max-width: 100%;
+    min-width: 350px;
 }
 
 footer a {
@@ -170,49 +172,47 @@ footer a {
 
 @media screen and (max-width: 480px) {
     #dog-picture {
-        width: 100%;
-        height: auto;
+        max-width: 100%;
+        min-width: 350px;
     }
     .card-container {
         flex-direction: column;
-    }
-    .about-card {
-        width: 100%;
-    }
-
-    .project-card {
-        width: 100%;
-    }
-
-    .contact-card {
-        width: 100%;
-    }
+        max-width: 100%;
+        min-width: none;
+    }    
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
     #dog-picture {
-        width: 80%;
-        height: auto;
+        max-width: 100%;
+        min-width: none;
+    }
+
+    .card-container {
+        max-width: 100%;
+        min-width: none;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     #dog-picture {
         width: 640px;
-        height: auto;
+    }
+
+    .card-container {
+        max-width: 100%;
+        min-width: none;
     }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1199px) {
+@media screen and (min-width: 1025px){
     #dog-picture {
-        width: 800px;
-        height: auto;
+        min-width: 640px;
+        max-width: 60%;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    #dog-picture {
-        width: 50%;
-        height: auto;
+    .card-container {
+        max-width: 100%;
+        min-width: none;
     }
 }
