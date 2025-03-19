@@ -2,55 +2,61 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Set the title to be displayed in the tab at the top -->
         <title>Nehemiah's Portfolio</title>
         <!-- Link to the CSS file -->
         <link rel="stylesheet" href="styles.css">
     </head>
-    <header>
-        <!-- Create a nav bar with anchor links to my different pages -->
-        <nav>
-            <!-- Home -->
-            <a href="index.html">Home</a>
-            <!-- About -->
-            <a href="about_me.html">About</a>
-            <!-- Projects -->
-            <a href="projects.html">Projects</a>
-            <!-- Contact -->
-            <a href="contact.html">Contact</a>
-        </nav>
-        <h1>
-            <!-- Give the page an intro -->
-            Nehemiah Sanders' Portfolio
-        </h1>
-    </header>
     <!-- Input the main chunk of my page content -->
     <body>
-        <h2>About Me</h2>
-        <!-- Create a section with fun facts in it -->
-        <section>
-            <h3>Fun Facts</h3>
-            <p>Hello my name is Nehemiah Sanders! 
-                Some fun things about myself is 
-                that I come from a family of 9 kids 
-                (I am the youngest) and that I have
-                been to 5 different countries.</p>
-        </section>
-        <!-- Create another section with an unordered list of interests -->
-        <section>
-            <h3>Interests</h3>
-            <p>Some of my interests include:</p>
-            <ul>
-                <li>basketball</li>
-                <li>pickleball</li>
-                <li>golf</li>
-                <li>hiking</li>
-            </ul>
-            <p>I enjoy pretty much anything active :)</p>
-        </section><br>
-        <p>Here's a picture of my dog!</p>
-        <!-- Include an image with a set height and width -->
-        <img src="IMG_4319.jpeg" alt="Dog" height="250" width="400"/>
+        <header>
+            <!-- Create a nav bar with anchor links to my different pages -->
+            <nav>
+                <ul>
+                <!-- Home -->
+                <li><a href="index.html">Home</a></li>
+                <!-- About -->
+                <li><a href="about_me.html">About</a></li>
+                <!-- Projects -->
+                <li><a href="projects.html">Projects</a></li>
+                <!-- Contact -->
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <!-- Give the page an intro -->
+                Nehemiah Sanders' Portfolio
+            </h1>
+        </header>
+        <main class="content">
+            <h2>About Me</h2>
+            <!-- Create a section with fun facts in it -->
+            <div class="card-container">
+                <div class="about-card">
+                    <h3>Fun Facts</h3>
+                    <p>Hello my name is Nehemiah Sanders! 
+                    Some fun things about myself is 
+                    that I come from a family of 9 kids 
+                    (I am the youngest) and that I have
+                    been to 5 different countries.</p>
+                </div>
+                <div class="about-card">
+                    <h3>Interests</h3>
+                    <p>Some of my interests include:</p>
+                    <ul>
+                        <li>basketball</li>
+                        <li>pickleball</li>
+                        <li>golf</li>
+                        <li>hiking</li>
+                    </ul>
+                    <p>I enjoy pretty much anything active :)</p>
+                </div>
+            </div>
+            <p>Here's a picture of my dog!</p>
+            <!-- Include an image with a set height and width -->
+            <img id="dog-picture" src="IMG_4319.jpeg" alt="Dog"/>
+        </main>
     </body>
     <!-- Create a footer that includes a copyright symbol and an email address -->
     <footer>

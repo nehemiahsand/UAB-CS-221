@@ -2,36 +2,54 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Set the title to be displayed in the tab at the top -->
         <title>Nehemiah's Portfolio</title>
         <!-- Link to the CSS file -->
         <link rel="stylesheet" href="styles.css">
     </head>
-    <header>
-        <!-- Create a nav bar with anchor links to my different pages -->
-        <nav>
-            <!-- Home -->
-            <a href="index.html">Home</a>
-            <!-- About -->
-            <a href="about_me.html">About</a>
-            <!-- Projects -->
-            <a href="projects.html">Projects</a>
-            <!-- Contact -->
-            <a href="contact.html">Contact</a>
-        </nav>
-        <h1>
-            <!-- Give the page an intro -->
-            Nehemiah Sanders' Portfolio
-        </h1>
-    </header>
     <!-- Input the main chunk of content -->
     <body>
-        <h2>Contact Info</h2>
-        <!-- Create a section tag to house a link to an email address -->
-        <section>
-            <h3>Email:</h3>
-            <a href="mailto:ntsander@uab.edu">ntsander@uab.edu</a>
-        </section>
+        <header>
+            <!-- Create a nav bar with anchor links to my different pages -->
+            <nav>
+                <ul>
+                <!-- Home -->
+                <li><a href="index.html">Home</a></li>
+                <!-- About -->
+                <li><a href="about_me.html">About</a></li>
+                <!-- Projects -->
+                <li><a href="projects.html">Projects</a></li>
+                <!-- Contact -->
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <h1>
+                <!-- Give the page an intro -->
+                Nehemiah Sanders' Portfolio
+            </h1>
+        </header>
+        <main class="content">
+            <h2>Contact Info</h2>
+            <!-- Create a section tag to house a link to an email address -->
+            <section>
+                <div class="card-container">
+                    <div class="contact-card">
+                        <form action="mailto:ntsander@uab.edu" method="get" enctype="text/plain">
+                            Name:<br>
+                            <input type="text" name="subject" placeholder="Your Name"><br>
+                            Subject:<br>
+                            <input type="text" name="subject" placeholder="Enter the Subject"><br>
+                            Email:<br>
+                            <input type="email" name="email" placeholder="Your Email"><br>
+                            Message:<br>
+                            <textarea name="body" rows="5" cols="30" placeholder="Your Message"></textarea><br>
+                            <button type="submit">Send</button>
+                          </form>
+                    </div>
+                </div>
+            </section>
+        </main>
     </body>
     <!-- Create a footer that includes a copyright symbol and an email address -->
     <footer>
