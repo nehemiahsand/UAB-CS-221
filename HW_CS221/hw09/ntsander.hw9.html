@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Number Checker</title>
+    <link rel="stylesheet" href="ntsander.hw9.css">
+</head>
+<body>
+    <script>
+        // Set a variable to hold the user's input
+        let userInput = prompt("Enter a numeric value (e.g. 95): ");
+        // Use modulus with a remaindeer of 0 to check if the number is even
+        if (userInput % 2 == 0) {
+            console.log(`The number ${userInput} is even!`);
+        }
+        // Use modulus with a remaindeer of 0 to check if the number is odd
+        else if (userInput % 2 == 1) {
+            console.log(`The number ${userInput} is odd!`)
+        }
+        // If it isn't even or odd tell the user it's invalid
+        else {
+            console.log(`Your input was invalid!`)
+        }
+    </script>
+</body>
+</html>
