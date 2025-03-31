@@ -1,0 +1,84 @@
+:root {
+    padding: 0;
+    --block-color: #ebeae2;
+    --button-color: #57664F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(DowntownBirmingham.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px);
+    transform: scale(1.02);
+    z-index: -1;
+}
+
+.main {
+    z-index: 1;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sign-up-form {
+    color: #41493e;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--block-color);
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form-name {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.vehicle-grid div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+form input {
+    border-radius: 10px;
+}
+
+#sign-up-form button {
+    background-color: var(--button-color);
+    border: none;
+    border-radius: 20px;
+    padding: 15px 20px 15px 20px;
+    color: white;
+}
