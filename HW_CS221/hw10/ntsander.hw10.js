@@ -15,12 +15,12 @@ function cpuGuess(randNum) {
 // Create a function to get a guess from the user
 function getUserInput() {
     // Prompt the user for input and turn it to lowercase
-    let userInput = prompt("Please enter your choice: Rock, Paper, or Scissors. ").toLocaleLowerCase();
+    let userInput = prompt("Please enter your choice: Rock, Paper, or Scissors. ").toLowerCase();
     // Check if the input is valid
     while(userInput != "rock" && userInput != "paper" && userInput != "scissors") {
         // If it is not valid tell the user and have them try again
         alert("You did not enter a valid choice. Try again.");
-        userInput = prompt("Please enter your choice: Rock, Paper, or Scissors. ");
+        userInput = prompt("Please enter your choice: Rock, Paper, or Scissors. ").toLowerCase();
     }
     // Return the correctly formatted user input
     return userInput;
@@ -53,7 +53,7 @@ function main() {
     competeWithCpu(userInput);
     // Ask the user if they want to play again
     while(confirm("Do you want to play again?")) {
-        getUserInput();
+        userInput = getUserInput();
         competeWithCpu(userInput);
     }
 }
