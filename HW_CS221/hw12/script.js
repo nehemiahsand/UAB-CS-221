@@ -15,19 +15,28 @@ const newQuoteBtn = document.getElementById('new-quote-btn');
 async function fetchQuote() {
     try {
         // TODO: Use the fetch API to get data from the API_URL
+        const response = await fetch(API_URL);
         // TODO: Convert the response to JSON
+        const data = await response.json();
         // TODO: Extract the quote and author from the response
+        const quote = data[0].q;
+        const author = data[0].a;
         // TODO: Update the DOM with the new quote and author
+        displayQuote(quote, author);
         
     } catch (error) {
         // TODO: Add error handling logic here
         // Display a user-friendly error message on the page
+        quoteText.innerText = "Error gathering quote.";
+        console.error("Error gathering API quote");
     }
 }
 
 // Function to display the quote and author in the DOM
 function displayQuote(quote, author) {
     // TODO: Update the DOM elements with the quote and author
+    quoteText.innerText = quote;
+    quoteAuthor.innerText = author;
 }
 
 // Event Listeners
@@ -37,4 +46,5 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // TODO: Add event listener to the "New Quote" button
     // It should call fetchQuote() when clicked
+    newQuoteBtn.addEventListener("click", fetchQuote);
 });
